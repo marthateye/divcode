@@ -1,0 +1,57 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/xlsx.core.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	
+	<script src="js/page.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js" ></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-header">
+			<img src="img/header.png" width="1108px" height="164px" alt="">
+			<div class="month-text">Session
+			</div>
+		</div>
+		<p class='file'><b>NOTE: </b>Please select the excel file containing all the training programs. You can 
+			<b><a href="Trainings.xlsx" download>download</a></b> it from here.</p>
+		<input type="file" class="file" id="files" name="files"/>
+		<div class="open-session">
+			<div class="open-session-header text-center">Training Programmes Available 
+			
+				<label style="color:white"> - Filter By Tags</label>
+				<select class="form-control" id="month_value">
+					<option value="All">All Categories</option>
+					<option value="HTML">HTML</option>
+					<option value="Python">Python</option>
+					<option value="Javascript">Javascript</option>
+					<option value="Django">Django</option>
+					<option value="Database">Database</option>
+					<option value="Server">Server</option>
+					
+				</select>
+			
+			</div>
+			<div class="row" id="Active-session">
+			</div>
+			<div class="row" align="center" >
+				<input type="button" id="first" onclick="firstPage()" value="first" />
+				<input type="button" id="next" onclick="nextPage()" value="next" />
+				<input type="button" id="previous" onclick="previousPage()" value="previous" />
+				<input type="button" id="last" onclick="lastPage()" value="last" />
+			</div>
+			
+		</div>
+		<br>
+
+	</div>
+	<footer><p align="center">Teye Martha 2020 - DiV Internship Code work - 27/03/2020</p></footer>
+</body>
+
+</html>
